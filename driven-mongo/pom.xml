@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>driven</artifactId>
+    <artifactId>driven-mongo</artifactId>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
