@@ -1,23 +1,26 @@
-package com.example.karatemsdemo.driven.entity;
+package com.example.karatemsdemo.driven.jdbc.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.Value;
+
+import java.util.List;
 
 @Value
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor(force = true)
 @Builder(toBuilder = true)
-public class TagEntity {
+public class CategoryEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
-    Long tagId;
+    Long categoryId;
     String name;
+
+    @OneToMany
+    List<PetEntity> pets;
 }

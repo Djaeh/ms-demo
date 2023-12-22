@@ -1,7 +1,7 @@
-package com.example.karatemsdemo.driven.mapper;
+package com.example.karatemsdemo.driven.jdbc.mapper;
 
 import com.example.karatemsdemo.domain.model.Pet;
-import com.example.karatemsdemo.driven.entity.PetEntity;
+import com.example.karatemsdemo.driven.jdbc.entity.PetEntity;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

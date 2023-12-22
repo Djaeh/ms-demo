@@ -1,4 +1,4 @@
-package com.example.karatemsdemo.driven.entity;
+package com.example.karatemsdemo.driven.jdbc.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

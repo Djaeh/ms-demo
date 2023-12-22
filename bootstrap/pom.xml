@@ -28,6 +28,11 @@
             <artifactId>driven-h2</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>driven-mongo</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!-- Database dependencies-->
         <dependency>
             <groupId>com.h2database</groupId>
