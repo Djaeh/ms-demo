@@ -1,0 +1,23 @@
+{
+  "id": 10,
+  "name": "Shade",
+  "category": {
+    "id": 1,
+    "name": "black panther"
+  },
+  "photoUrls": [
+    "url1",
+    "url2"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "tagName1"
+    },
+    {
+      "id": 2,
+      "name": "tagName2"
+    }
+  ],
+  "status": "available"
+}
