@@ -1,4 +1,4 @@
-Feature: dogs end-point that uses jdbc as part of the test
+Feature: Adding a pet
 
   Background:
     * url urlBase
