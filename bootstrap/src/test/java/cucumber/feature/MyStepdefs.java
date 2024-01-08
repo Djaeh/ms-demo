@@ -22,7 +22,7 @@ public class MyStepdefs {
     private Pet petRequest;
     private Pet petResult;
 
-    @When("adding this pet")
+    @When("Arthur create this pet to the store")
     public void addingThisPet() {
         var client = WebClient.create("http://localhost:" + ApplicationStarter.FIRST_AVAILABLE_TCP_PORT);
         petResult = client.post()
@@ -33,7 +33,7 @@ public class MyStepdefs {
                 .block();
     }
 
-    @Given("the following pet")
+    @Given("Arthur has a new pet")
     public void theFollowingPet(DataTable petTable) {
         var petMap = petTable.asMaps().get(0);
         petRequest = new Pet();
