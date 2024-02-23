@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import utils.ApplicationStarter;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class KarateTest {
 
@@ -28,6 +28,8 @@ class KarateTest {
         Results results = Runner.path("classpath:karate/features")
                 .systemProperty("server.url", "http://localhost:" + ApplicationStarter.FIRST_AVAILABLE_TCP_PORT)
                 .parallel(1);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+        assertThat(results.getFailCount())
+                .withFailMessage(results.getErrorMessages())
+                .isZero();
     }
 }

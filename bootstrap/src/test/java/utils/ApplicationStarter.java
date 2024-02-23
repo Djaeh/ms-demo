@@ -56,7 +56,6 @@ public class ApplicationStarter {
     public static void stopApplication() {
         if(context != null) {
             context.close();
-            context.stop();
         }
     }
 
